@@ -10,7 +10,6 @@ if (navToggle && mainNav) {
     navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   });
 
-  // Close the menu after a nav link is tapped (mobile)
   mainNav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       mainNav.classList.remove('open');
@@ -19,6 +18,29 @@ if (navToggle && mainNav) {
       navToggle.setAttribute('aria-label', 'Open menu');
     });
   });
+}
+
+// Highlight the current section's nav link while scrolling
+const navLinks = document.querySelectorAll('#main-nav a[href^="#"]');
+const sections = Array.from(navLinks)
+  .map((link) => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+if ('IntersectionObserver' in window && sections.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = `#${entry.target.id}`;
+          navLinks.forEach((link) => {
+            link.classList.toggle('active', link.getAttribute('href') === id);
+          });
+        }
+      });
+    },
+    { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+  );
+  sections.forEach((section) => observer.observe(section));
 }
 
 // Footer year
