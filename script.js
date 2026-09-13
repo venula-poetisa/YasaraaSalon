@@ -20,8 +20,36 @@ if (navToggle && mainNav) {
   });
 }
 
+// Service tabs (Salon / Dressmaking)
+const tabButtons = document.querySelectorAll('.tab-btn');
+const panels = document.querySelectorAll('.service-panel');
+
+function activateTab(tabName) {
+  tabButtons.forEach((btn) => {
+    const isActive = btn.dataset.tab === tabName;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-selected', String(isActive));
+    btn.tabIndex = isActive ? 0 : -1;
+  });
+  panels.forEach((panel) => {
+    const isActive = panel.dataset.panel === tabName;
+    panel.classList.toggle('active', isActive);
+    panel.hidden = !isActive;
+  });
+}
+
+tabButtons.forEach((btn) => {
+  btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+});
+
+// Nav links that jump straight to a specific service tab
+document.querySelectorAll('[data-tab-link]').forEach((link) => {
+  link.addEventListener('click', () => activateTab(link.dataset.tabLink));
+});
+
 // Highlight the current section's nav link while scrolling
-const navLinks = document.querySelectorAll('#main-nav a[href^="#"]');
+// (tab-jump links are excluded since two of them share the #services target)
+const navLinks = document.querySelectorAll('#main-nav a[href^="#"]:not([data-tab-link])');
 const sections = Array.from(navLinks)
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);

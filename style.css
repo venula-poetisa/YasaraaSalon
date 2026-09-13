@@ -95,6 +95,18 @@ section { width: 100%; }
 .btn-sm { padding: 0.6em 1.3em; font-size: 0.9rem; }
 
 /* ==========================================================
+   UTILITY BAR (desktop only)
+   ========================================================== */
+.utility-bar { background: var(--sage-deep); color: rgba(255,255,255,0.85); font-size: 0.82rem; }
+.utility-inner { display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0; max-width: var(--container); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+.utility-left { display: flex; gap: 1.8em; }
+.utility-left span { display: inline-flex; align-items: center; gap: 0.5em; }
+.utility-right { display: flex; align-items: center; gap: 0.9em; }
+.utility-right a { color: rgba(255,255,255,0.85); text-decoration: none; display: inline-flex; align-items: center; }
+.utility-right a:hover { color: var(--salmon); }
+.utility-divider { color: rgba(255,255,255,0.3); }
+
+/* ==========================================================
    HEADER
    ========================================================== */
 .site-header {
@@ -193,29 +205,47 @@ section { width: 100%; }
 .about-points li::before { content: '✓'; position: absolute; left: 0; color: var(--sage); font-weight: 600; }
 
 /* ==========================================================
-   SERVICES
+   SERVICES — tabbed interface
    ========================================================== */
 .services { padding: var(--section-pad) 0; background: var(--cream); }
-.services-dark { background: var(--sage-deep); }
-.services-dark h2, .services-dark h3, .services-dark .eyebrow { color: var(--white); }
-.services-dark .eyebrow { color: var(--salmon); }
-.services-dark .lead { color: rgba(255,255,255,0.75); }
-.services-dark .service-card { background: rgba(255,255,255,0.06); }
-.services-dark .service-card p { color: rgba(255,255,255,0.7); }
-.services-dark .price { color: var(--salmon); }
+.services-head { max-width: 68ch; margin-bottom: clamp(1.8rem, 3vw, 2.5rem); }
 
-.services-head { max-width: 68ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
-.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: clamp(1.2rem, 2vw, 1.8rem); }
+/* Tabs */
+.service-tabs { display: flex; gap: 0.6em; margin-bottom: clamp(2rem, 4vw, 2.8rem); border-bottom: 1px solid rgba(68,81,57,0.15); }
+.tab-btn {
+  display: inline-flex; align-items: center; gap: 0.6em;
+  background: none; border: none; cursor: pointer;
+  font-family: var(--font-body); font-size: 1.02rem; color: var(--ink-soft);
+  padding: 0.8em 0.3em; margin-bottom: -1px;
+  border-bottom: 2.5px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.tab-btn svg { color: var(--ink-soft); transition: color 0.2s ease; }
+.tab-btn:hover { color: var(--sage-deep); }
+.tab-btn.active { color: var(--sage-deep); border-bottom-color: var(--salmon-deep); font-weight: 500; }
+.tab-btn.active svg { color: var(--salmon-deep); }
+
+/* Panels */
+.service-panel { animation: panel-fade 0.35s ease both; }
+.service-panel[hidden] { display: none; }
+@keyframes panel-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+.panel-layout { display: grid; grid-template-columns: 280px 1fr; gap: clamp(1.8rem, 3vw, 2.8rem); align-items: start; }
+.panel-aside { position: sticky; top: 100px; }
+.panel-aside img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--radius); margin-bottom: 1em; box-shadow: 0 20px 40px -24px rgba(43,45,34,0.4); }
+.panel-aside h3 { font-size: 1.25rem; margin-bottom: 0.35em; }
+.panel-aside p { color: var(--ink-soft); font-size: 0.92rem; }
+
+.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: clamp(1.1rem, 2vw, 1.5rem); }
 .service-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: 0 16px 40px -28px rgba(43,45,34,0.4); transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .service-card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px -26px rgba(43,45,34,0.45); }
 .service-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-.service-card-body { padding: 1.2em 1.3em 1.4em; }
+.service-card-body { padding: 1.1em 1.2em 1.3em; }
 .service-card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8em; margin-bottom: 0.3em; }
-.service-card-top h3 { margin: 0; }
-.price { font-size: 0.92rem; font-weight: 500; color: var(--salmon-deep); white-space: nowrap; }
-.service-card p { color: var(--ink-soft); font-size: 0.94rem; margin: 0; }
+.service-card-top h3 { margin: 0; font-size: 1.08rem; }
+.price { font-size: 0.88rem; font-weight: 500; color: var(--salmon-deep); white-space: nowrap; }
+.service-card p { color: var(--ink-soft); font-size: 0.92rem; margin: 0; }
 .price-note { margin-top: 1.8em; font-size: 0.85rem; color: var(--ink-soft); font-style: italic; }
-.price-note-dark { color: rgba(255,255,255,0.6); }
 
 /* ==========================================================
    PROCESS
@@ -307,11 +337,30 @@ section { width: 100%; }
 .footer-bottom { max-width: var(--container); margin: 2.5em auto 0; padding: 1.5em var(--gutter) 0; border-top: 1px solid rgba(255,255,255,0.12); text-align: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); }
 
 /* ==========================================================
+   MOBILE FLOATING WHATSAPP BUTTON
+   Hidden on desktop — the header already has an inline CTA there.
+   ========================================================== */
+.mobile-fab {
+  display: none;
+  position: fixed; bottom: 1.3rem; right: 1.3rem; z-index: 90;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366; color: var(--white);
+  align-items: center; justify-content: center;
+  box-shadow: 0 14px 30px -10px rgba(0,0,0,0.4);
+}
+
+/* ==========================================================
    RESPONSIVE
+   Desktop (>1100px): full utility bar + inline nav + sidebar service panels.
+   Tablet (700–1100px): condensed header, single-column panel layout, tabs stay inline.
+   Mobile (<700px): hamburger nav, floating WhatsApp button, horizontally
+   scrollable tabs, single-column cards throughout.
    ========================================================== */
 @media (max-width: 1100px) {
+  .utility-bar { display: none; }
   .header-phone { display: none; }
   .hero-badge { display: none; }
+  .panel-layout { grid-template-columns: 220px 1fr; }
   .footer-inner { grid-template-columns: 1.4fr 1fr 1fr; }
   .footer-col:last-child { grid-column: 1 / -1; flex-direction: row; gap: 1.5em; flex-wrap: wrap; }
   .footer-col:last-child h4 { width: 100%; }
@@ -329,6 +378,8 @@ section { width: 100%; }
   .main-nav a { font-size: 1.05rem; }
   .nav-toggle { display: flex; }
   .header-actions .header-phone { display: none; }
+  .header-actions .btn-sm { display: none; }
+  .mobile-fab { display: flex; }
 
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { max-width: 480px; margin: 0 auto; order: -1; }
@@ -336,6 +387,10 @@ section { width: 100%; }
 
   .about-inner { grid-template-columns: 1fr; }
   .about-media { max-width: 420px; margin: 0 auto; }
+
+  .panel-layout { grid-template-columns: 1fr; }
+  .panel-aside { position: static; display: flex; align-items: center; gap: 1.2em; }
+  .panel-aside img { width: 110px; height: 110px; aspect-ratio: 1/1; flex-shrink: 0; margin-bottom: 0; }
 
   .contact-inner { grid-template-columns: 1fr; }
   .contact-map { order: -1; min-height: 260px; }
@@ -346,6 +401,15 @@ section { width: 100%; }
 @media (max-width: 640px) {
   .facts-inner { justify-content: center; text-align: center; }
   .facts-inner div { flex: 1 1 45%; justify-content: center; }
+
+  .service-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; scrollbar-width: none; }
+  .service-tabs::-webkit-scrollbar { display: none; }
+  .tab-btn { flex-shrink: 0; }
+
+  .panel-aside { flex-direction: column; text-align: center; }
+  .panel-aside img { width: 100%; height: auto; aspect-ratio: 16/9; }
+  .service-grid { grid-template-columns: 1fr; }
+
   .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
   .gallery-grid figure.g-tall { grid-row: span 2; }
   .cta-actions { flex-direction: column; align-items: stretch; }
