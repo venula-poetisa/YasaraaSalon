@@ -1,3 +1,9 @@
 {
-  "photos": []
+  "photos": [
+    {
+      "category": "Dressmaking",
+      "image": "/images/5d418370-57b1-436a-bce3-81ad3f398c2f.png",
+      "caption": "pink corset top"
+    }
+  ]
 }
