@@ -3,20 +3,14 @@
     {
       "name": "Custom Dress",
       "description": "Made-to-measure dresses designed to your preferences.",
-      "price": "",
-      "image": ""
-    },
-    {
-      "name": "Blouse",
-      "description": "Custom-fitted blouses stitched to your measurements.",
-      "price": "",
-      "image": ""
+      "price": "depends",
+      "image": "/images/🫦.jpeg"
     },
     {
       "name": "Saree Blouse",
       "description": "Custom saree blouse designs and fitting.",
-      "price": "",
-      "image": ""
+      "price": "1500",
+      "image": "/images/f7e93886-b943-4e62-8bc6-2f0dc1fa2786.webp"
     }
   ]
 }
