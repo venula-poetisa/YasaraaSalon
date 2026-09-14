@@ -1,453 +1,687 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yasaraa Salon & Dress Making, Kottawa</title>
-<meta name="description" content="Yasaraa Salon & Dress Making in Kottawa — ladies' salon services, custom dressmaking, bridal styling and alterations.">
+
+<title>Yasaraa Salon & Dress Making</title>
+
+<meta name="description" content="Yasaraa Salon & Dress Making. Salon services and custom dressmaking.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
+
 <body>
 
 <!-- =====================================================
-     UTILITY BAR — desktop only, hidden on tablet/mobile
+     UTILITY BAR
      ===================================================== -->
+
 <div class="utility-bar">
   <div class="utility-inner">
+
     <div class="utility-left">
-      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
-      <span data-address>142 Peradeniya Road, Kottawa</span>
-    </span>
-      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-      <span data-hours>Mon–Sat 9am–7pm, Sun 10am–4pm</span>
-    </span>
+
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21Z"/>
+          <circle cx="12" cy="9.5" r="2.3"/>
+        </svg>
+
+        <span data-address></span>
+      </span>
+
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 3"/>
+        </svg>
+
+        <span data-hours></span>
+      </span>
+
     </div>
+
     <div class="utility-right">
-      <a href="tel:+94812345678" data-phone>+94 81 234 5678</a>
-      <span class="utility-divider">|</span>
-      <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.3c-.27-.04-1.2-.11-2.28-.11-2.25 0-3.8 1.37-3.8 3.9V10.5H8v3h2.42V21h3.08Z"/></svg></a>
-      <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.29 1.34 9.67 1.33 12 1.33Zm0 1.8c-3.15 0-3.5.01-4.74.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82C3.18 8.63 3.17 8.98 3.17 12s.01 3.37.07 4.11c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-.74.07-1.09.07-4.11s-.01-3.37-.07-4.11c-.04-.96-.2-1.48-.34-1.82a3.1 3.1 0 0 0-.73-1.13 3.1 3.1 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34C15.5 3.81 15.15 3.8 12 3.8Zm0 3.7a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm4.68-1.98a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1Z"/></svg></a>
+
+      <a href="#" data-phone aria-label="Phone">
+        <span data-phone-text></span>
+      </a>
+
     </div>
+
   </div>
 </div>
 
+
 <!-- =====================================================
-     HEADER — replace [BUSINESS NAME] throughout the file
+     HEADER
      ===================================================== -->
+
 <header class="site-header" id="top">
+
   <div class="header-inner">
+
     <a href="#top" class="brand">
+
       <svg class="brand-mark" viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
-        <path d="M20 3 C10 3 5 12 8 20 C5 28 10 37 20 37 C30 37 35 28 32 20 C35 12 30 3 20 3 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-        <path d="M20 11 C15 15 15 25 20 29 C25 25 25 15 20 11 Z" fill="currentColor"/>
+        <path d="M20 3 C10 3 5 12 8 20 C5 28 10 37 20 37 C30 37 35 28 32 20 C35 12 30 3 20 3 Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"/>
+        <path d="M20 11 C15 15 15 25 20 29 C25 25 25 15 20 11 Z"
+              fill="currentColor"/>
       </svg>
-      <span class="brand-text" data-business-name>Yasaraa Salon & Dress Making</span>
+
+      <span class="brand-text" data-business-name></span>
+
     </a>
 
+
     <nav class="main-nav" id="main-nav">
+
       <a href="#about">About</a>
-      <a href="#services" data-tab-link="salon">Salon</a>
-      <a href="#services" data-tab-link="dressmaking">Dressmaking</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#testimonials">Reviews</a>
-      <a href="#contact">Contact</a>
+
+      <a href="#services" data-tab-link="salon">
+        Salon
+      </a>
+
+      <a href="#services" data-tab-link="dressmaking">
+        Dressmaking
+      </a>
+
+      <a href="#gallery">
+        Gallery
+      </a>
+
+      <a href="#testimonials">
+        Reviews
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
     </nav>
 
+
     <div class="header-actions">
-      <a href="tel:+94812345678" class="header-phone">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
-        <span>+94 81 234 5678</span>
+
+      <a href="#" class="header-phone" data-phone>
+        <svg width="16" height="16" viewBox="0 0 24 24"
+             fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z"/>
+        </svg>
+
+        <span data-phone-text></span>
       </a>
-      <a href="https://wa.me/94771234567" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Book Now</a>
+
+      <a href="#contact" class="btn btn-primary btn-sm">
+        Contact Us
+      </a>
+
     </div>
 
-    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
-      <span></span><span></span><span></span>
+
+    <button class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
     </button>
+
   </div>
+
 </header>
+
 
 <!-- =====================================================
      HERO
      ===================================================== -->
+
 <section class="hero">
+
   <div class="hero-grid">
+
     <div class="hero-copy">
-      <p class="eyebrow">Ladies&rsquo; Salon &amp; Dress Making &mdash; Kottawa</p>
 
-<h1>Beauty, style<br>&amp; beautifully made.</h1>
+      <p class="eyebrow">
+        Ladies’ Salon & Dress Making
+      </p>
 
-<p class="hero-sub">
-  A warm space for hair, beauty and custom dressmaking —
-  from everyday appointments to bridal looks and garments
-  made especially for you.
-</p>
+      <h1>
+        Beauty, style<br>
+        &amp; beautifully made.
+      </h1>
+
+      <p class="hero-sub">
+        Salon services and custom dressmaking, created with care
+        for every client and every occasion.
+      </p>
+
       <div class="hero-actions">
-        <a href="https://wa.me/94771234567" class="btn btn-primary" target="_blank" rel="noopener">Book on WhatsApp</a>
-        <a href="#gallery" class="btn btn-outline">View our work</a>
+
+        <a href="#" data-whatsapp class="btn btn-primary"
+           target="_blank" rel="noopener">
+          Book on WhatsApp
+        </a>
+
+        <a href="#gallery" class="btn btn-outline">
+          View our work
+        </a>
+
       </div>
-        <div><strong>2,000+</strong><span>garments stitched</span></div>
-      </div>
+
     </div>
+
+
     <div class="hero-visual">
-      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=900&auto=format&fit=crop" alt="Sample placeholder — replace with a real photo of the salon interior or a styled client" class="hero-img-main">
-      <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — replace with a real photo of dressmaking or fabric work" class="hero-img-float">
+
       <div class="hero-badge">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 16l4-8 4 6 3-4 5 6"/></svg>
-        <div><strong>Bridal season</strong><span>booking fast &mdash; enquire early</span></div>
+
+        <svg width="20" height="20" viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="1.6"
+             aria-hidden="true">
+
+          <path d="M4 16l4-8 4 6 3-4 5 6"/>
+
+        </svg>
+
+        <div>
+          <strong data-business-name></strong>
+          <span>Salon &amp; Dress Making</span>
+        </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- =====================================================
-     STRIP — quick facts band, full width
-     ===================================================== -->
-<section class="facts-strip">
-  <div class="facts-inner">
-    <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span>Open 7 days a week</span></div>
-    <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Home-visit bridal service</span></div>
-    <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6-5.5-3-5.5 3 1-6L3 8.9 9 8z"/></svg><span>Free consultation on custom orders</span></div>
-    <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><span>Weekend appointments available</span></div>
-  </div>
-</section>
 
 <!-- =====================================================
      ABOUT
      ===================================================== -->
+
 <section class="about" id="about">
+
   <div class="about-inner">
+
     <div class="about-media">
-      <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop" alt="Sample placeholder — replace with a real photo of the studio or founder">
+      <!-- Real business photo can be added later -->
     </div>
+
+
     <div class="about-copy">
-      <p class="eyebrow">Our story</p>
-      <h2>Two crafts, one welcoming studio</h2>
-      <p>Yasaraa Salon & Dress Making started as a small home tailoring business run by Mrs. Chandrika Perera, and has grown into a full salon and dressmaking studio in the heart of Kottawa. We believe getting ready for a big day &mdash; or just for yourself &mdash; should feel personal, unhurried, and genuinely well-made.</p>
-      <p>Every client is measured, styled, and fitted one-on-one. No rushed appointments, no guesswork &mdash; just careful work from people who&rsquo;ve been doing this for over a decade.</p>
-      <ul class="about-points">
-        <li>Trained &amp; experienced hairstylists and seamstresses</li>
-        <li>Fabric sourcing assistance for custom orders</li>
-        <li>Private fitting room for bridal &amp; occasion wear</li>
-      </ul>
+
+      <p class="eyebrow">
+        About us
+      </p>
+
+      <h2>
+        Beauty and dressmaking, together
+      </h2>
+
+      <p data-about>
+      </p>
+
     </div>
+
   </div>
+
 </section>
 
+
 <!-- =====================================================
-     SERVICES — tabbed interface (Salon / Dressmaking)
-     Each tab panel holds its own service-grid of cards.
-     To add a service, copy one <article class="service-card">
-     block inside the relevant panel.
+     SERVICES
      ===================================================== -->
+
 <section class="services" id="services">
+
   <div class="services-inner">
+
     <div class="services-head">
-      <p class="eyebrow">What we offer</p>
-      <h2>Two crafts, one studio</h2>
-      <p class="lead">Switch between our salon menu and dressmaking services below. Walk-ins welcome for salon visits; custom orders start with a free consultation.</p>
+
+      <p class="eyebrow">
+        What we offer
+      </p>
+
+      <h2>
+        Our services
+      </h2>
+
+      <p class="lead">
+        Explore our salon services and custom dressmaking work.
+      </p>
+
     </div>
 
-    <div class="service-tabs" role="tablist" aria-label="Service categories">
-      <button class="tab-btn active" role="tab" id="tab-salon" aria-controls="panel-salon" aria-selected="true" data-tab="salon">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 4c3 2 9 2 12 0M4 10c4 2 12 2 16 0M7 21c1.5-4 1.5-9 0-13M17 21c-1.5-4-1.5-9 0-13"/></svg>
+
+    <div class="service-tabs"
+         role="tablist"
+         aria-label="Service categories">
+
+      <button class="tab-btn active"
+              role="tab"
+              id="tab-salon"
+              aria-controls="panel-salon"
+              aria-selected="true"
+              data-tab="salon">
+
         Salon
+
       </button>
-      <button class="tab-btn" role="tab" id="tab-dressmaking" aria-controls="panel-dressmaking" aria-selected="false" data-tab="dressmaking" tabindex="-1">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M9 3l3 2 3-2 2 5-2 1v12H7V9L5 8l4-5Z"/></svg>
+
+
+      <button class="tab-btn"
+              role="tab"
+              id="tab-dressmaking"
+              aria-controls="panel-dressmaking"
+              aria-selected="false"
+              data-tab="dressmaking"
+              tabindex="-1">
+
         Dressmaking
+
       </button>
+
     </div>
+
 
     <div class="service-panels">
 
-      <!-- SALON PANEL -->
-      <div class="service-panel active" id="panel-salon" role="tabpanel" aria-labelledby="tab-salon" data-panel="salon">
+
+      <!-- SALON -->
+
+      <div class="service-panel active"
+           id="panel-salon"
+           role="tabpanel"
+           aria-labelledby="tab-salon"
+           data-panel="salon">
+
         <div class="panel-layout">
+
           <aside class="panel-aside">
-            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=600&auto=format&fit=crop" alt="Sample placeholder — inside the salon">
-            <h3>Hair, skin &amp; beauty care</h3>
-            <p>Everyday styling through to full bridal packages, done by experienced hands.</p>
+
+            <h3>
+              Salon services
+            </h3>
+
+            <p>
+              Explore the beauty services currently offered by Yasaraa.
+            </p>
+
           </aside>
+
+
           <div class="service-grid" id="salon-services">
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — haircut and styling">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Haircut &amp; Blow Dry</h3><span class="price">Rs. 1,200</span></div>
-                <p>Consultation, precision cut and finished style for any hair length.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — hair colouring">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Colour &amp; Highlights</h3><span class="price">from Rs. 3,500</span></div>
-                <p>Global colour, root touch-ups, balayage and foil highlights.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — bridal hair and makeup">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Bridal Hair &amp; Makeup</h3><span class="price">from Rs. 15,000</span></div>
-                <p>Trial session included. Home visits available on your wedding day.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — facial and skincare">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Facials &amp; Skincare</h3><span class="price">from Rs. 2,000</span></div>
-                <p>Deep-cleansing, brightening and anti-ageing facial treatments.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — manicure and pedicure">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Manicure &amp; Pedicure</h3><span class="price">from Rs. 1,500</span></div>
-                <p>Classic and gel finishes, plus nail art on request.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — threading and waxing">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Threading &amp; Waxing</h3><span class="price">from Rs. 500</span></div>
-                <p>Full brow, face and body grooming menu.</p>
-              </div>
-            </article>
           </div>
+
         </div>
-        <p class="price-note">Prices shown are sample placeholders &mdash; replace with your mother&rsquo;s actual price list.</p>
+
       </div>
 
-      <!-- DRESSMAKING PANEL -->
-      <div class="service-panel" id="panel-dressmaking" role="tabpanel" aria-labelledby="tab-dressmaking" data-panel="dressmaking" hidden>
+
+      <!-- DRESSMAKING -->
+
+      <div class="service-panel"
+           id="panel-dressmaking"
+           role="tabpanel"
+           aria-labelledby="tab-dressmaking"
+           data-panel="dressmaking"
+           hidden>
+
         <div class="panel-layout">
+
           <aside class="panel-aside">
-            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=600&auto=format&fit=crop" alt="Sample placeholder — dressmaking atelier">
-            <h3>Custom dressmaking &amp; alterations</h3>
-            <p>Bring a photo, a sketch, or just an idea &mdash; we&rsquo;ll design a garment made only for you.</p>
+
+            <h3>
+              Custom dressmaking
+            </h3>
+
+            <p>
+              Explore the dressmaking and tailoring services currently offered by Yasaraa.
+            </p>
+
           </aside>
+
+
           <div class="service-grid" id="dressmaking-services">
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — custom dress stitching">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Custom Dresses &amp; Frocks</h3><span class="price">Price on inquiry</span></div>
-                <p>Made-to-measure, any pattern or fabric you bring in.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — saree blouse stitching">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Saree Blouses &amp; Falls</h3><span class="price">from Rs. 1,800</span></div>
-                <p>Fitted blouses, saree fall, pico and same-day finishing.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — bridal and occasion wear">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Bridal &amp; Occasion Wear</h3><span class="price">Price on inquiry</span></div>
-                <p>Multiple fittings included to get every detail exactly right.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — clothing alterations">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Alterations &amp; Repairs</h3><span class="price">from Rs. 300</span></div>
-                <p>Resizing, hemming and restyling of garments you already own.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1596722570259-88e7f1476236?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — school uniforms">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>School Uniforms</h3><span class="price">from Rs. 900</span></div>
-                <p>Durable stitching, sized with room for your child to grow.</p>
-              </div>
-            </article>
-            <article class="service-card">
-              <img src="https://images.unsplash.com/photo-1600166898405-da9535204843?q=80&w=500&auto=format&fit=crop" alt="Sample placeholder — home textiles and curtains">
-              <div class="service-card-body">
-                <div class="service-card-top"><h3>Home Textiles</h3><span class="price">Price on inquiry</span></div>
-                <p>Curtains, cushion covers and table linen made to order.</p>
-              </div>
-            </article>
           </div>
+
         </div>
-        <p class="price-note">Prices shown are sample placeholders &mdash; replace with your mother&rsquo;s actual price list.</p>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
-<!-- =====================================================
-     PROCESS
-     ===================================================== -->
-<section class="process">
-  <div class="process-inner">
-    <p class="eyebrow">How custom orders work</p>
-    <h2>From first chat to finished fit</h2>
-    <ol class="process-steps">
-      <li><span class="step-num">1</span><h3>Consult</h3><p>Tell us the occasion, style and budget.</p></li>
-      <li><span class="step-num">2</span><h3>Measure</h3><p>Precise measurements taken in-studio.</p></li>
-      <li><span class="step-num">3</span><h3>Design</h3><p>Choose a pattern and fabric together.</p></li>
-      <li><span class="step-num">4</span><h3>Stitch</h3><p>Cut and sewn by hand and machine.</p></li>
-      <li><span class="step-num">5</span><h3>Fit</h3><p>A trial fitting for bridal &amp; formal wear.</p></li>
-      <li><span class="step-num">6</span><h3>Deliver</h3><p>Collect in-studio or arrange delivery.</p></li>
-    </ol>
-  </div>
-</section>
 
 <!-- =====================================================
      GALLERY
-     Replace each <img src="..."> below with a real photo.
-     Recommended: square-ish images, at least 800px wide.
      ===================================================== -->
+
 <section class="gallery" id="gallery">
+
   <div class="gallery-inner">
+
     <div class="services-head">
-      <p class="eyebrow">Our work</p>
-      <h2>A few recent favourites</h2>
+
+      <p class="eyebrow">
+        Our work
+      </p>
+
+      <h2>
+        Gallery
+      </h2>
+
     </div>
+
+
     <div class="gallery-grid" id="gallery-grid">
-      <figure class="g-tall"><img src="https://images.unsplash.com/photo-1583241800698-e8ab01c85a8b?q=80&w=700&auto=format&fit=crop" alt="Sample placeholder — bridal look"><figcaption>Bridal hair &amp; makeup</figcaption></figure>
-      <figure><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=700&auto=format&fit=crop" alt="Sample placeholder — custom gown"><figcaption>Custom occasion gown</figcaption></figure>
-      <figure><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=700&auto=format&fit=crop" alt="Sample placeholder — studio interior"><figcaption>Inside the studio</figcaption></figure>
-      <figure class="g-tall"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=700&auto=format&fit=crop" alt="Sample placeholder — hair colour result"><figcaption>Balayage colour</figcaption></figure>
-      <figure><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=700&auto=format&fit=crop" alt="Sample placeholder — tailored blouse"><figcaption>Tailored saree blouse</figcaption></figure>
-      <figure><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=700&auto=format&fit=crop" alt="Sample placeholder — makeup session"><figcaption>Editorial makeup</figcaption></figure>
     </div>
+
   </div>
+
 </section>
+
 
 <!-- =====================================================
      TESTIMONIALS
      ===================================================== -->
+
 <section class="testimonials" id="testimonials">
+
   <div class="testimonials-inner">
-    <p class="eyebrow">Kind words</p>
-    <h2>What our clients say</h2>
+
+    <p class="eyebrow">
+      Reviews
+    </p>
+
+    <h2>
+      What our clients say
+    </h2>
+
     <div class="testimonial-grid" id="reviews-grid">
-      <blockquote>
-        <div class="stars">★★★★★</div>
-        <p>They stitched my daughter&rsquo;s homecoming dress in four days and it fit better than anything from a shop. Truly talented hands.</p>
-        <footer>Nadeesha W. &mdash; Kottawa</footer>
-      </blockquote>
-      <blockquote>
-        <div class="stars">★★★★★</div>
-        <p>I&rsquo;ve been getting my hair done here for years. Friendly, patient, and they always listen to what I actually want.</p>
-        <footer>Ishara P. &mdash; Peradeniya</footer>
-      </blockquote>
-      <blockquote>
-        <div class="stars">★★★★★</div>
-        <p>Booked the full bridal package for my wedding day &mdash; hair, makeup and my saree blouse were all perfect. Highly recommend.</p>
-        <footer>Dilini R. &mdash; Kottawa</footer>
-      </blockquote>
     </div>
+
   </div>
+
 </section>
 
+
 <!-- =====================================================
-     CTA BANNER
+     CTA
      ===================================================== -->
+
 <section class="cta-banner">
+
   <div class="cta-inner">
-    <h2>Ready to look and feel your best?</h2>
-    <p>Message us on WhatsApp with your date and what you need &mdash; we&rsquo;ll get back to you the same day.</p>
+
+    <h2>
+      Ready to get started?
+    </h2>
+
+    <p>
+      Contact Yasaraa to ask about salon services,
+      dressmaking or custom orders.
+    </p>
+
     <div class="cta-actions">
-      <a href="https://wa.me/94771234567" class="btn btn-primary" target="_blank" rel="noopener">Chat on WhatsApp</a>
-      <a href="tel:+94812345678" class="btn btn-outline-light">Call +94 81 234 5678</a>
+
+      <a href="#" data-whatsapp
+         class="btn btn-primary"
+         target="_blank"
+         rel="noopener">
+
+        Chat on WhatsApp
+
+      </a>
+
+      <a href="#" data-phone
+         class="btn btn-outline-light">
+
+        Call us
+
+      </a>
+
     </div>
+
   </div>
+
 </section>
+
 
 <!-- =====================================================
      CONTACT
      ===================================================== -->
+
 <section class="contact" id="contact">
+
   <div class="contact-inner">
+
     <div class="contact-info">
-      <p class="eyebrow">Visit or book</p>
-      <h2>Come say hello</h2>
+
+      <p class="eyebrow">
+        Visit or book
+      </p>
+
+      <h2>
+        Get in touch
+      </h2>
+
+
       <ul class="contact-list">
-        <li><strong>Address</strong><span>142 Peradeniya Road, Kottawa, Sri Lanka</span></li>
-        <li><strong>Phone</strong><span><a href="tel:+94812345678">+94 81 234 5678</a></span></li>
-        <li><strong>WhatsApp</strong><span><a href="https://wa.me/94771234567" target="_blank" rel="noopener">+94 77 123 4567</a></span></li>
-        <li><strong>Email</strong><span><a href="mailto:hello@Yasaraa Salon & Dress Making.lk">hello@Yasaraa Salon & Dress Making.lk</a></span></li>
+
+        <li>
+          <strong>Address</strong>
+          <span data-address></span>
+        </li>
+
+        <li>
+          <strong>Phone</strong>
+          <span>
+            <a href="#" data-phone></a>
+          </span>
+        </li>
+
+        <li>
+          <strong>WhatsApp</strong>
+          <span>
+            <a href="#" data-whatsapp>Message us</a>
+          </span>
+        </li>
+
       </ul>
+
+
       <table class="hours-table">
-        <tr><th>Mon &ndash; Fri</th><td>9:00 am &ndash; 6:00 pm</td></tr>
-        <tr><th>Saturday</th><td>9:00 am &ndash; 7:00 pm</td></tr>
-        <tr><th>Sunday</th><td>10:00 am &ndash; 4:00 pm</td></tr>
+
+        <tr>
+          <th>Opening hours</th>
+          <td data-hours></td>
+        </tr>
+
       </table>
-      <div class="social-row">
-        <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.3c-.27-.04-1.2-.11-2.28-.11-2.25 0-3.8 1.37-3.8 3.9V10.5H8v3h2.42V21h3.08Z"/></svg></a>
-        <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.29 1.34 9.67 1.33 12 1.33Zm0 1.8c-3.15 0-3.5.01-4.74.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82C3.18 8.63 3.17 8.98 3.17 12s.01 3.37.07 4.11c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-.74.07-1.09.07-4.11s-.01-3.37-.07-4.11c-.04-.96-.2-1.48-.34-1.82a3.1 3.1 0 0 0-.73-1.13 3.1 3.1 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34C15.5 3.81 15.15 3.8 12 3.8Zm0 3.7a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm4.68-1.98a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1Z"/></svg></a>
-      </div>
+
     </div>
+
+
     <div class="contact-map">
-      <!-- Replace with a real Google Maps embed once the address is confirmed, e.g.
-           <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0" loading="lazy"></iframe> -->
-      <div class="map-placeholder"><span>Map placeholder<br>embed Google Maps here</span></div>
+
+      <div class="map-placeholder">
+        <span>
+          Location map will be added here.
+        </span>
+      </div>
+
     </div>
+
   </div>
+
 </section>
+
 
 <!-- =====================================================
      FOOTER
      ===================================================== -->
+
 <footer class="site-footer">
+
   <div class="footer-inner">
+
+
     <div class="footer-col footer-brand">
-      <span class="brand-text">Yasaraa</span>
-<p>Ladies&rsquo; salon &amp; custom dressmaking in Kottawa, Sri Lanka.</p>
-      <div class="social-row">
-        <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.3c-.27-.04-1.2-.11-2.28-.11-2.25 0-3.8 1.37-3.8 3.9V10.5H8v3h2.42V21h3.08Z"/></svg></a>
-        <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.29 1.34 9.67 1.33 12 1.33Zm0 1.8c-3.15 0-3.5.01-4.74.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82C3.18 8.63 3.17 8.98 3.17 12s.01 3.37.07 4.11c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-.74.07-1.09.07-4.11s-.01-3.37-.07-4.11c-.04-.96-.2-1.48-.34-1.82a3.1 3.1 0 0 0-.73-1.13 3.1 3.1 0 0 0-1.13-.73c-.34-.14-.86-.3-1.82-.34C15.5 3.81 15.15 3.8 12 3.8Zm0 3.7a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm4.68-1.98a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1Z"/></svg></a>
-      </div>
+
+      <span class="brand-text"
+            data-business-name>
+      </span>
+
+      <p>
+        Ladies’ salon &amp; custom dressmaking.
+      </p>
+
     </div>
+
+
     <div class="footer-col">
-      <h4>Explore</h4>
-      <a href="#about">About</a>
-      <a href="#salon">Salon services</a>
-      <a href="#dressmaking">Dressmaking</a>
-      <a href="#gallery">Gallery</a>
+
+      <h4>
+        Explore
+      </h4>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#services"
+         data-tab-link="salon">
+        Salon services
+      </a>
+
+      <a href="#services"
+         data-tab-link="dressmaking">
+        Dressmaking
+      </a>
+
+      <a href="#gallery">
+        Gallery
+      </a>
+
     </div>
+
+
     <div class="footer-col">
-      <h4>Get in touch</h4>
-      <a href="tel:+94812345678">+94 81 234 5678</a>
-      <a href="https://wa.me/94771234567" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="mailto:hello@Yasaraa Salon & Dress Making.lk">hello@Yasaraa Salon & Dress Making.lk</a>
+
+      <h4>
+        Get in touch
+      </h4>
+
+      <a href="#" data-phone></a>
+
+      <a href="#" data-whatsapp>
+        WhatsApp
+      </a>
+
     </div>
+
+
     <div class="footer-col">
-      <h4>Studio hours</h4>
-      <span>Mon &ndash; Fri: 9am &ndash; 6pm</span>
-      <span>Saturday: 9am &ndash; 7pm</span>
-      <span>Sunday: 10am &ndash; 4pm</span>
+
+      <h4>
+        Studio hours
+      </h4>
+
+      <span data-hours></span>
+
     </div>
+
+
   </div>
-  <p class="footer-bottom">&copy; <span id="year"></span> Yasaraa Salon & Dress Making. All rights reserved. &mdash; Sample content, replace before launch.</p>
+
+
+  <p class="footer-bottom">
+
+    &copy;
+    <span id="year"></span>
+
+    <span data-business-name></span>.
+
+  </p>
+
 </footer>
 
-<!-- Floating WhatsApp button — mobile/tablet only, hidden on desktop (see CSS) -->
-<a href="https://wa.me/94771234567" data-whatsapp class="mobile-fab" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+
+<!-- =====================================================
+     MOBILE WHATSAPP
+     ===================================================== -->
+
+<a href="#"
+   data-whatsapp
+   class="mobile-fab"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with us on WhatsApp">
+
+  <svg width="26"
+       height="26"
+       viewBox="0 0 24 24"
+       fill="currentColor"
+       aria-hidden="true">
+
+    <path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/>
+
+  </svg>
+
 </a>
+
 
 <script src="script.js"></script>
 
+
 <script>
   if (window.netlifyIdentity) {
+
     window.netlifyIdentity.on("init", function(user) {
+
       if (!user) {
+
         window.netlifyIdentity.on("login", function() {
+
           window.location.href = "/admin/";
+
         });
+
       }
+
     });
+
   }
 </script>
 
+
 </body>
 </html>
+```
