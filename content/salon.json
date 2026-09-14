@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "name": "Hair Cutting",
+      "description": "Professional haircuts and styling.",
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Hair Styling",
+      "description": "Styling for everyday looks and special occasions.",
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Facial",
+      "description": "Relaxing facial treatments for a refreshed look.",
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Bridal Beauty",
+      "description": "Beauty and styling services for brides and special occasions.",
+      "price": "",
+      "image": ""
+    }
+  ]
+}

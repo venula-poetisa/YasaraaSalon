@@ -1,0 +1,22 @@
+{
+  "designs": [
+    {
+      "name": "Custom Dress",
+      "description": "Made-to-measure dresses designed to your preferences.",
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Blouse",
+      "description": "Custom-fitted blouses stitched to your measurements.",
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Saree Blouse",
+      "description": "Custom saree blouse designs and fitting.",
+      "price": "",
+      "image": ""
+    }
+  ]
+}
