@@ -3,26 +3,31 @@
     {
       "name": "Hair Cutting",
       "description": "Professional haircuts and styling.",
-      "price": "",
-      "image": ""
+      "price": "5000",
+      "image": "/images/🫦.jpeg"
     },
     {
       "name": "Hair Styling",
       "description": "Styling for everyday looks and special occasions.",
-      "price": "",
+      "price": "2000",
       "image": ""
     },
     {
       "name": "Facial",
       "description": "Relaxing facial treatments for a refreshed look.",
-      "price": "",
+      "price": "3000",
       "image": ""
     },
     {
       "name": "Bridal Beauty",
       "description": "Beauty and styling services for brides and special occasions.",
-      "price": "",
+      "price": "4000",
       "image": ""
+    },
+    {
+      "name": "Galvanic",
+      "description": "bla",
+      "price": "10k"
     }
   ]
 }
