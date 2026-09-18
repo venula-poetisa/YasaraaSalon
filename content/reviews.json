@@ -1,3 +1,40 @@
 {
-  "reviews": []
+  "reviews": [
+    {
+      "name": "Dilshi Kavindya",
+      "review": "Absolutely loved my experience! ❤️ The service was amazing, and everything was done with so much care and attention to detail. Such a beautiful and welcoming place. Definitely recommend! ✨💇‍♀️",
+      "rating": 5
+    },
+    {
+      "name": "Shanika Weerakkody",
+      "review": "Amazing dress maker ❤️",
+      "rating": 5
+    },
+    {
+      "name": "Nethmi Devindya",
+      "review": "Really nice, clean ambiance with great service and excellent value for money, super convenient and highly recommended for a quick visit!",
+      "rating": 5
+    },
+    {
+      "name": "Venuri Vethmini",
+      "review": "Great Service! my saree jacket fitted me perfectly. 💓💓💓",
+      "rating": 5
+    },
+    {
+      "name": "ino fernando",
+      "rating": 5
+    },
+    {
+      "name": "manomi perera",
+      "rating": 5
+    },
+    {
+      "name": " Ransarani Pramodya",
+      "rating": 5
+    },
+    {
+      "name": "Sakunthala Perera",
+      "rating": 5
+    }
+  ]
 }
