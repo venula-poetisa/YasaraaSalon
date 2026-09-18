@@ -284,9 +284,11 @@ p {
   color: var(--burgundy);
 }
 
-.brand-mark {
+.brand-logo {
   width: 31px;
   height: 31px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 [data-business-name] {
