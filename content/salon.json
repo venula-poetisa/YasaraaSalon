@@ -13,28 +13,15 @@
       "image": "/images/galvanic-treatment.jpg"
     },
     {
-      "name": "Facial",
-      "description": "Relaxing facial treatments for a refreshed look.",
-      "price": "3000",
-      "image": ""
-    },
-    {
-      "name": "Bridal Beauty",
-      "description": "Beauty and styling services for brides and special occasions.",
-      "price": "4000",
-      "image": ""
-    },
-    {
-      "name": "Galvanic Facial",
-      "description": "Deep-cleansing galvanic facial treatment.",
-      "price": "10000",
-      "image": ""
-    },
-    {
       "name": "Eyebrow Fixing",
       "description": " ",
       "price": "250",
       "image": "/images/eyebrow-fixing.jpg"
+    },
+    {
+      "name": "Face Waxing",
+      "price": "2000",
+      "image": "/images/Face Waxing.jpg"
     }
   ]
 }
