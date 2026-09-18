@@ -1,16 +1,16 @@
 {
   "services": [
     {
-      "name": "Hair Cutting",
-      "description": "Professional haircuts and styling.",
-      "price": "5000",
-      "image": ""
+      "name": "Facial",
+      "description": "Normal Facial",
+      "price": "3500",
+      "image": "/images/normal-facial.jpg"
     },
     {
-      "name": "Hair Styling",
-      "description": "Styling for everyday looks and special occasions.",
-      "price": "2000",
-      "image": ""
+      "name": "Galvanic Facial Treatment",
+      "description": " ",
+      "price": "5000",
+      "image": "/images/galvanic-treatment.jpg"
     },
     {
       "name": "Facial",
@@ -33,7 +33,8 @@
     {
       "name": "Eyebrow Fixing",
       "description": " ",
-      "price": "250"
+      "price": "250",
+      "image": "/images/eyebrow-fixing.jpg"
     }
   ]
 }
