@@ -29,6 +29,11 @@
       "description": "Deep-cleansing galvanic facial treatment.",
       "price": "10000",
       "image": ""
+    },
+    {
+      "name": "Eyebrow Fixing",
+      "description": " ",
+      "price": "250"
     }
   ]
 }
