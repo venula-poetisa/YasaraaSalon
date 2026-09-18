@@ -797,6 +797,16 @@ p {
   line-height: 1.6;
 }
 
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-large);
+  color: var(--brown-light);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .price-note {
   margin: 1.5rem 0 0;
   color: var(--brown-light);

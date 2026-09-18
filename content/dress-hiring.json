@@ -1,0 +1,22 @@
+{
+  "dresses": [
+    {
+      "name": "Bridal Gown",
+      "description": "Elegant bridal gowns available to hire for your wedding day.",
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Party Frock",
+      "description": "Stylish frocks for birthdays and evening parties.",
+      "price": "",
+      "image": ""
+    },
+    {
+      "name": "Saree Draping & Hire",
+      "description": "Designer sarees available to hire, with draping service on request.",
+      "price": "",
+      "image": ""
+    }
+  ]
+}

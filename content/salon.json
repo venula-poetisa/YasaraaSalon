@@ -4,7 +4,7 @@
       "name": "Hair Cutting",
       "description": "Professional haircuts and styling.",
       "price": "5000",
-      "image": "/images/🫦.jpeg"
+      "image": ""
     },
     {
       "name": "Hair Styling",
@@ -25,9 +25,10 @@
       "image": ""
     },
     {
-      "name": "Galvanic",
-      "description": "bla",
-      "price": "10k"
+      "name": "Galvanic Facial",
+      "description": "Deep-cleansing galvanic facial treatment.",
+      "price": "10000",
+      "image": ""
     }
   ]
 }

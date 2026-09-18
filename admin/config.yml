@@ -58,9 +58,10 @@ collections:
                 name: "description"
                 widget: "text"
 
-              - label: "Price"
+              - label: "Price (Rs.)"
                 name: "price"
                 widget: "string"
+                required: false
 
               - label: "Photo"
                 name: "image"
@@ -87,9 +88,40 @@ collections:
                 name: "description"
                 widget: "text"
 
-              - label: "Price"
+              - label: "Price (Rs.)"
                 name: "price"
                 widget: "string"
+                required: false
+
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                required: false
+
+
+  - name: "dress_hiring"
+    label: "Dress Hiring"
+    files:
+      - name: "dress_hiring"
+        label: "Dress Hiring"
+        file: "content/dress-hiring.json"
+        fields:
+          - label: "Dresses"
+            name: "dresses"
+            widget: "list"
+            fields:
+              - label: "Dress Name"
+                name: "name"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Hire Price (Rs. per day/event)"
+                name: "price"
+                widget: "string"
+                required: false
 
               - label: "Photo"
                 name: "image"
@@ -123,6 +155,7 @@ collections:
                 options:
                   - "Salon"
                   - "Dressmaking"
+                  - "Dress Hiring"
                   - "Bridal"
 
 

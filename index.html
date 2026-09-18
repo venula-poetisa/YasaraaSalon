@@ -6,16 +6,16 @@
 
 <title>Yasaraa Salon & Dress Making</title>
 
-<meta name="description" content="Yasaraa Salon & Dress Making. Salon services and custom dressmaking.">
+<meta name="description" content="Yasaraa Salon & Dress Making in Kottawa. Salon services, custom dressmaking and dress hiring.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
           <circle cx="12" cy="9.5" r="2.3"/>
         </svg>
 
-        <span data-address></span>
+        <span data-address>Loading&hellip;</span>
       </span>
 
       <span>
@@ -46,7 +46,7 @@
           <path d="M12 7v5l3 3"/>
         </svg>
 
-        <span data-hours></span>
+        <span data-hours>Loading&hellip;</span>
       </span>
 
     </div>
@@ -82,7 +82,7 @@
               fill="currentColor"/>
       </svg>
 
-      <span class="brand-text" data-business-name></span>
+      <span class="brand-text" data-business-name>Yasaraa</span>
 
     </a>
 
@@ -91,25 +91,17 @@
 
       <a href="#about">About</a>
 
-      <a href="#services" data-tab-link="salon">
-        Salon
-      </a>
+      <a href="#services" data-tab-link="salon">Salon</a>
 
-      <a href="#services" data-tab-link="dressmaking">
-        Dressmaking
-      </a>
+      <a href="#services" data-tab-link="dressmaking">Dressmaking</a>
 
-      <a href="#gallery">
-        Gallery
-      </a>
+      <a href="#services" data-tab-link="hiring">Dress Hiring</a>
 
-      <a href="#testimonials">
-        Reviews
-      </a>
+      <a href="#gallery">Gallery</a>
 
-      <a href="#contact">
-        Contact
-      </a>
+      <a href="#testimonials">Reviews</a>
+
+      <a href="#contact">Contact</a>
 
     </nav>
 
@@ -125,9 +117,7 @@
         <span data-phone-text></span>
       </a>
 
-      <a href="#contact" class="btn btn-primary btn-sm">
-        Contact Us
-      </a>
+      <a href="#contact" class="btn btn-primary btn-sm">Contact Us</a>
 
     </div>
 
@@ -159,9 +149,7 @@
 
     <div class="hero-copy">
 
-      <p class="eyebrow">
-        Ladies’ Salon & Dress Making
-      </p>
+      <p class="eyebrow">Ladies&rsquo; Salon &bull; Dress Making &bull; Dress Hiring</p>
 
       <h1>
         Beauty, style<br>
@@ -169,8 +157,8 @@
       </h1>
 
       <p class="hero-sub">
-        Salon services and custom dressmaking, created with care
-        for every client and every occasion.
+        Salon services, custom dressmaking and dress hiring for
+        every occasion &mdash; created with care for every client.
       </p>
 
       <div class="hero-actions">
@@ -180,9 +168,7 @@
           Book on WhatsApp
         </a>
 
-        <a href="#gallery" class="btn btn-outline">
-          View our work
-        </a>
+        <a href="#gallery" class="btn btn-outline">View our work</a>
 
       </div>
 
@@ -204,7 +190,7 @@
         </svg>
 
         <div>
-          <strong data-business-name></strong>
+          <strong data-business-name>Yasaraa</strong>
           <span>Salon &amp; Dress Making</span>
         </div>
 
@@ -232,16 +218,11 @@
 
     <div class="about-copy">
 
-      <p class="eyebrow">
-        About us
-      </p>
+      <p class="eyebrow">About us</p>
 
-      <h2>
-        Beauty and dressmaking, together
-      </h2>
+      <h2>Beauty, dressmaking &amp; dress hiring, together</h2>
 
-      <p data-about>
-      </p>
+      <p data-about></p>
 
     </div>
 
@@ -260,16 +241,12 @@
 
     <div class="services-head">
 
-      <p class="eyebrow">
-        What we offer
-      </p>
+      <p class="eyebrow">What we offer</p>
 
-      <h2>
-        Our services
-      </h2>
+      <h2>Our services</h2>
 
       <p class="lead">
-        Explore our salon services and custom dressmaking work.
+        Explore our salon services, custom dressmaking and dress hiring collection.
       </p>
 
     </div>
@@ -285,11 +262,8 @@
               aria-controls="panel-salon"
               aria-selected="true"
               data-tab="salon">
-
         Salon
-
       </button>
-
 
       <button class="tab-btn"
               role="tab"
@@ -298,9 +272,17 @@
               aria-selected="false"
               data-tab="dressmaking"
               tabindex="-1">
-
         Dressmaking
+      </button>
 
+      <button class="tab-btn"
+              role="tab"
+              id="tab-hiring"
+              aria-controls="panel-hiring"
+              aria-selected="false"
+              data-tab="hiring"
+              tabindex="-1">
+        Dress Hiring
       </button>
 
     </div>
@@ -320,19 +302,12 @@
         <div class="panel-layout">
 
           <aside class="panel-aside">
-
-            <h3>
-              Salon services
-            </h3>
-
-            <p>
-              Explore the beauty services currently offered by Yasaraa.
-            </p>
-
+            <h3>Salon services</h3>
+            <p>Explore the beauty services currently offered by Yasaraa.</p>
           </aside>
 
-
           <div class="service-grid" id="salon-services">
+            <p class="empty-state">Salon services will appear here shortly.</p>
           </div>
 
         </div>
@@ -352,19 +327,37 @@
         <div class="panel-layout">
 
           <aside class="panel-aside">
-
-            <h3>
-              Custom dressmaking
-            </h3>
-
-            <p>
-              Explore the dressmaking and tailoring services currently offered by Yasaraa.
-            </p>
-
+            <h3>Custom dressmaking</h3>
+            <p>Explore the dressmaking and tailoring services currently offered by Yasaraa.</p>
           </aside>
 
-
           <div class="service-grid" id="dressmaking-services">
+            <p class="empty-state">Dressmaking services will appear here shortly.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- DRESS HIRING -->
+
+      <div class="service-panel"
+           id="panel-hiring"
+           role="tabpanel"
+           aria-labelledby="tab-hiring"
+           data-panel="hiring"
+           hidden>
+
+        <div class="panel-layout">
+
+          <aside class="panel-aside">
+            <h3>Dress hiring</h3>
+            <p>Browse dresses available to hire for weddings, parties and other special occasions.</p>
+          </aside>
+
+          <div class="service-grid" id="hiring-services">
+            <p class="empty-state">Dresses available for hire will appear here shortly.</p>
           </div>
 
         </div>
@@ -387,19 +380,12 @@
   <div class="gallery-inner">
 
     <div class="services-head">
-
-      <p class="eyebrow">
-        Our work
-      </p>
-
-      <h2>
-        Gallery
-      </h2>
-
+      <p class="eyebrow">Our work</p>
+      <h2>Gallery</h2>
     </div>
 
-
     <div class="gallery-grid" id="gallery-grid">
+      <p class="empty-state">Photos of our work are coming soon.</p>
     </div>
 
   </div>
@@ -415,15 +401,11 @@
 
   <div class="testimonials-inner">
 
-    <p class="eyebrow">
-      Reviews
-    </p>
-
-    <h2>
-      What our clients say
-    </h2>
+    <p class="eyebrow">Reviews</p>
+    <h2>What our clients say</h2>
 
     <div class="testimonial-grid" id="reviews-grid">
+      <p class="empty-state">Client reviews are coming soon.</p>
     </div>
 
   </div>
@@ -439,13 +421,11 @@
 
   <div class="cta-inner">
 
-    <h2>
-      Ready to get started?
-    </h2>
+    <h2>Ready to get started?</h2>
 
     <p>
       Contact Yasaraa to ask about salon services,
-      dressmaking or custom orders.
+      dressmaking, dress hiring or custom orders.
     </p>
 
     <div class="cta-actions">
@@ -454,17 +434,10 @@
          class="btn btn-primary"
          target="_blank"
          rel="noopener">
-
         Chat on WhatsApp
-
       </a>
 
-      <a href="#" data-phone
-         class="btn btn-outline-light">
-
-        Call us
-
-      </a>
+      <a href="#" data-phone class="btn btn-outline-light">Call us</a>
 
     </div>
 
@@ -483,14 +456,8 @@
 
     <div class="contact-info">
 
-      <p class="eyebrow">
-        Visit or book
-      </p>
-
-      <h2>
-        Get in touch
-      </h2>
-
+      <p class="eyebrow">Visit or book</p>
+      <h2>Get in touch</h2>
 
       <ul class="contact-list">
 
@@ -501,41 +468,30 @@
 
         <li>
           <strong>Phone</strong>
-          <span>
-            <a href="#" data-phone></a>
-          </span>
+          <span><a href="#" data-phone></a></span>
         </li>
 
         <li>
           <strong>WhatsApp</strong>
-          <span>
-            <a href="#" data-whatsapp>Message us</a>
-          </span>
+          <span><a href="#" data-whatsapp>Message us</a></span>
         </li>
 
       </ul>
 
-
       <table class="hours-table">
-
         <tr>
           <th>Opening hours</th>
           <td data-hours></td>
         </tr>
-
       </table>
 
     </div>
 
 
     <div class="contact-map">
-
       <div class="map-placeholder">
-        <span>
-          Location map will be added here.
-        </span>
+        <span>Location map will be added here.</span>
       </div>
-
     </div>
 
   </div>
@@ -551,83 +507,37 @@
 
   <div class="footer-inner">
 
-
     <div class="footer-col footer-brand">
-
-      <span class="brand-text"
-            data-business-name>
-      </span>
-
-      <p>
-        Ladies’ salon &amp; custom dressmaking.
-      </p>
-
+      <span class="brand-text" data-business-name></span>
+      <p>Ladies&rsquo; salon, custom dressmaking &amp; dress hiring.</p>
     </div>
 
-
     <div class="footer-col">
-
-      <h4>
-        Explore
-      </h4>
-
-      <a href="#about">
-        About
-      </a>
-
-      <a href="#services"
-         data-tab-link="salon">
-        Salon services
-      </a>
-
-      <a href="#services"
-         data-tab-link="dressmaking">
-        Dressmaking
-      </a>
-
-      <a href="#gallery">
-        Gallery
-      </a>
-
+      <h4>Explore</h4>
+      <a href="#about">About</a>
+      <a href="#services" data-tab-link="salon">Salon services</a>
+      <a href="#services" data-tab-link="dressmaking">Dressmaking</a>
+      <a href="#services" data-tab-link="hiring">Dress hiring</a>
+      <a href="#gallery">Gallery</a>
     </div>
 
-
     <div class="footer-col">
-
-      <h4>
-        Get in touch
-      </h4>
-
+      <h4>Get in touch</h4>
       <a href="#" data-phone></a>
-
-      <a href="#" data-whatsapp>
-        WhatsApp
-      </a>
-
+      <a href="#" data-whatsapp>WhatsApp</a>
     </div>
-
 
     <div class="footer-col">
-
-      <h4>
-        Studio hours
-      </h4>
-
+      <h4>Studio hours</h4>
       <span data-hours></span>
-
     </div>
-
 
   </div>
 
-
   <p class="footer-bottom">
-
     &copy;
     <span id="year"></span>
-
     <span data-business-name></span>.
-
   </p>
 
 </footer>
@@ -644,14 +554,8 @@
    rel="noopener"
    aria-label="Chat with us on WhatsApp">
 
-  <svg width="26"
-       height="26"
-       viewBox="0 0 24 24"
-       fill="currentColor"
-       aria-hidden="true">
-
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/>
-
   </svg>
 
 </a>
@@ -661,26 +565,19 @@
 
 
 <script>
-  if (window.netlifyIdentity) {
-
-    window.netlifyIdentity.on("init", function(user) {
-
-      if (!user) {
-
-        window.netlifyIdentity.on("login", function() {
-
-          window.location.href = "/admin/";
-
-        });
-
-      }
-
-    });
-
-  }
+  window.addEventListener("DOMContentLoaded", function () {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            window.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  });
 </script>
 
 
 </body>
 </html>
-```
