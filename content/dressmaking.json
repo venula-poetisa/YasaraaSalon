@@ -1,22 +1,20 @@
 {
   "designs": [
     {
+      "name": "Saree Jacket",
+      "description": "Made-to-measure dresses designed to your preferences. Price depends on the saree jacket design.",
+      "price": "1500 onwards",
+      "image": "/images/saree jacket.jpg"
+    },
+    {
+      "name": "Custom Top",
+      "description": "Custom-fitted blouses stitched to your measurements and preferences.",
+      "image": "/images/blouse.jpg"
+    },
+    {
       "name": "Custom Dress",
-      "description": "Made-to-measure dresses designed to your preferences.",
-      "price": "",
-      "image": ""
-    },
-    {
-      "name": "Blouse",
-      "description": "Custom-fitted blouses stitched to your measurements.",
-      "price": "",
-      "image": ""
-    },
-    {
-      "name": "Saree Blouse",
-      "description": "Custom saree blouse designs and fitting.",
-      "price": "",
-      "image": ""
+      "description": "Custom-fitted dresses stitched to your measurements and preferences.",
+      "image": "/images/dress.jpg"
     }
   ]
 }
