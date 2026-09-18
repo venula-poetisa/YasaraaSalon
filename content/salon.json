@@ -41,6 +41,32 @@
       "description": "Price varies according to the makeup.",
       "price": "1500 onwards",
       "image": "/images/Simple makeup.jpg"
+    },
+    {
+      "name": "Layered Haircut",
+      "description": "Price depends on the hair length",
+      "price": "1500 onwards",
+      "image": "/images/layering.png"
+    },
+    {
+      "name": "Hair Trim",
+      "price": "750",
+      "image": "/images/trimming.png"
+    },
+    {
+      "name": "Rebonding",
+      "description": "Price depends on the hair length and used products brands.",
+      "image": "/images/rebonding.jpg"
+    },
+    {
+      "name": "Hair Coloring",
+      "description": "Price depends on the hair length and used products brands.",
+      "image": "/images/hair color.jpg"
+    },
+    {
+      "name": "Hair blowout",
+      "description": "Price depends on the hair length",
+      "image": "/images/blowout.jpg"
     }
   ]
 }
