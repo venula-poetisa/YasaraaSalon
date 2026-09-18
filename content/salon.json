@@ -20,8 +20,27 @@
     },
     {
       "name": "Face Waxing",
+      "description": " ",
       "price": "2000",
       "image": "/images/Face Waxing.jpg"
+    },
+    {
+      "name": "LED Face Mask",
+      "description": " ",
+      "price": "7000",
+      "image": "/images/LED mask.jpg"
+    },
+    {
+      "name": "Face Cleanup",
+      "description": " ",
+      "price": "2500",
+      "image": "/images/Face Cleanup.jpg"
+    },
+    {
+      "name": "Makeup",
+      "description": "Price varies according to the makeup.",
+      "price": "1500 onwards",
+      "image": "/images/Simple makeup.jpg"
     }
   ]
 }
