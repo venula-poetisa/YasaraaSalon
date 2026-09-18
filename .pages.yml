@@ -1,0 +1,182 @@
+media:
+  input: images
+  output: /images
+
+content:
+
+  - name: business
+    label: Business Information
+    type: file
+    path: content/business.json
+    format: json
+    fields:
+      - name: name
+        label: Business Name
+        type: string
+
+      - name: about
+        label: About
+        type: text
+
+      - name: phone
+        label: Phone
+        type: string
+
+      - name: whatsapp
+        label: WhatsApp
+        type: string
+
+      - name: address
+        label: Address
+        type: string
+
+      - name: hours
+        label: Opening Hours
+        type: string
+
+
+  - name: salon
+    label: Salon Services
+    type: file
+    path: content/salon.json
+    format: json
+    fields:
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Service Name
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: price
+            label: Price (Rs.)
+            type: string
+            required: false
+
+          - name: image
+            label: Photo
+            type: image
+            required: false
+
+
+  - name: dressmaking
+    label: Dressmaking
+    type: file
+    path: content/dressmaking.json
+    format: json
+    fields:
+      - name: designs
+        label: Designs
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Design Name
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: price
+            label: Price (Rs.)
+            type: string
+            required: false
+
+          - name: image
+            label: Photo
+            type: image
+            required: false
+
+
+  - name: dress_hiring
+    label: Dress Hiring
+    type: file
+    path: content/dress-hiring.json
+    format: json
+    fields:
+      - name: dresses
+        label: Dresses
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Dress Name
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: price
+            label: Hire Price (Rs. per day/event)
+            type: string
+            required: false
+
+          - name: image
+            label: Photo
+            type: image
+            required: false
+
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Photo
+            type: image
+
+          - name: caption
+            label: Caption
+            type: string
+            required: false
+
+          - name: category
+            label: Category
+            type: select
+            options:
+              - Salon
+              - Dressmaking
+              - Dress Hiring
+              - Bridal
+
+
+  - name: reviews
+    label: Reviews
+    type: file
+    path: content/reviews.json
+    format: json
+    fields:
+      - name: reviews
+        label: Reviews
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Customer Name
+            type: string
+
+          - name: review
+            label: Review
+            type: text
+
+          - name: rating
+            label: Rating
+            type: number
+            options:
+              min: 1
+              max: 5
